@@ -87,7 +87,7 @@ class FeedScreen extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
             child: Container(
               width: double.infinity,
-              height: 500,
+              height: 530,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(25),
@@ -130,6 +130,26 @@ class FeedScreen extends StatelessWidget {
                           trailing: IconButton(
                             icon: Icon(Icons.more_horiz),
                             color: Colors.black,
+                          ),
+                        ),
+                        Container(
+                          margin: EdgeInsets.all(10.0),
+                          width: double.infinity,
+                          height: 400,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25.0),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black45,
+                                offset: Offset(0,5),
+                                blurRadius: 8.0,
+                              )
+                            ],
+                            image: DecorationImage(
+                              image: AssetImage("assets/images/post0.jpg"),
+                              fit: BoxFit.fitWidth,
+
+                            )
                           ),
                         )
                       ],
